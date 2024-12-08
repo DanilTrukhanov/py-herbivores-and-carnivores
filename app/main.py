@@ -31,6 +31,5 @@ class Carnivore(Animal):
         if victim.hidden or isinstance(victim, Carnivore):
             return
         victim.health -= 50
-
         if victim.health <= 0:
             Animal.alive.remove(victim)
